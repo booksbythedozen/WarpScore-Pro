@@ -1,3 +1,5 @@
+![Modified version of original image by Д.Ильин: vectorization - Star Trek Warp Field.png by Trekky0623 at English Wikipedia, CC0, https://commons.wikimedia.org/w/index.php?curid=102959289](./Logo/WarpScorePro_Logo_Text.jpg)
+
 # *WarpScore-Pro*
 
 ## Overview
