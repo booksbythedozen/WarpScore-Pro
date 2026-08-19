@@ -2,7 +2,6 @@
   <img src="./Logo/WarpScorePro_Logo_Text.jpg" width="800" />
 </p>
 <!--WarpScore "Logo".-->
-!Modified version of original image by Д.Ильин: vectorization - Star Trek Warp Field.png by Trekky0623 at English Wikipedia, CC0, https://commons.wikimedia.org/w/index.php?curid=102959289
 
 # *WarpScore-Pro*
 
@@ -18,3 +17,5 @@ The user assumes all risk for using any code that is provided, which is offered 
 *WarpScore* 
 Copyleft (C) 2026 Bryce P Mulligan, PhD, CPsych | 
 Licensed under the GNU General Public License (GPL). See LICENSE for details.
+
+*WarpScore* logo is a modified version of original image by Д.Ильин: vectorization - Star Trek Warp Field.png by Trekky0623 at English Wikipedia, CC0, https://commons.wikimedia.org/w/index.php?curid=102959289
