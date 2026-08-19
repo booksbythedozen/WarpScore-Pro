@@ -1,4 +1,8 @@
-![Modified version of original image by Д.Ильин: vectorization - Star Trek Warp Field.png by Trekky0623 at English Wikipedia, CC0, https://commons.wikimedia.org/w/index.php?curid=102959289](./Logo/WarpScorePro_Logo_Text.jpg)
+<p align="center">
+  <img src="./Logo/WarpScorePro_Logo_Text.jpg" width="500" />
+</p>
+<!--WarpScore "Logo".-->
+!Modified version of original image by Д.Ильин: vectorization - Star Trek Warp Field.png by Trekky0623 at English Wikipedia, CC0, https://commons.wikimedia.org/w/index.php?curid=102959289
 
 # *WarpScore-Pro*
 
