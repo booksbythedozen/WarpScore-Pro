@@ -36,6 +36,6 @@ The user assumes all risk for using any code that is provided, which is offered 
 ## Licensing
 *WarpScore* 
 Copyleft (C) 2026 Bryce P Mulligan, PhD, CPsych | 
-Licensed under the GNU General Public License (GPL). See LICENSE for details.
+Licensed under the GNU General Public License (GPL). See [LICENSE](https://raw.githubusercontent.com/booksbythedozen/WarpScore-Pro/refs/heads/main/LICENSE) for details.
 
 *WarpScore* logo is a modified version of original image by Д.Ильин: vectorization - Star Trek Warp Field.png by Trekky0623 at English Wikipedia, CC0, https://commons.wikimedia.org/w/index.php?curid=102959289
