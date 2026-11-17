@@ -1,0 +1,5 @@
+Score,age_min,age_max,education_min,education_max,Stratification,Nmean,Nsd,Nn,Source,Comment
+FakeTest,16,100,0,22,overall,19.8,4.2,109,Example source,Poor quality sampling
+FakeTest,18,26,0,22,age,21.1,4.5,86,Example source,Updated norms available soon
+FakeTest,20,20,11,11,education,22.4,4.7,35,Example source,Limited age range in normative sample
+FakeTest,20,20,11,11,age_education,22.4,4.7,35,Example source,Better normative data exist but are proprietary
