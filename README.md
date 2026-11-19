@@ -13,22 +13,29 @@
 ## Using *WarpScore-Pro*
 1. Install [*R*](https://www.r-project.org/) and [*RStudio*](https://docs.posit.co/ide/user/#rstudio-ide-oss-downloads).
 
-2. Download the [*WarpScore-Pro* repository](https://github.com/booksbythedozen/WarpScore-Pro/tree/main). 
+2. Download the [*WarpScore-Pro* repository](https://github.com/booksbythedozen/WarpScore-Pro/tree/main).
+
+3. Run the setup script
+```
+./Setup/WarpScorePro_Setup.R
+```
  
-3. Open the file called
+4. Restart *RStudio*
+
+5. Open the file called
 
 ```
 ./PatientData/DataInput.csv
 ```
 and input your patient/client data into the appropriate cells
   
-4. Open the file called
+6. Open the file called
 
 ```
  ./Scripts/WarpScore-Pro.Rmd
 ```  
 
-5. Click *Knit* or press Ctrl+Shift+K to generate the HTML report.
+7. Click *Knit* or press Ctrl+Shift+K to generate the HTML report.
 
 ## Limitations
 The user assumes all risk for using any code that is provided, which is offered entirely without warranty of any kind. Ethically, legally, and philosophically, there is no software that can replace human clinical judgment.
