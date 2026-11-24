@@ -1,0 +1,37 @@
+---
+title: "WarpScore-Pro Sharing & Setup Instructions"
+author: "Bryce P Mulligan, PhD, CPsych"
+date: "24 November 2026"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<!--WarpScore "Logo".-->
+![Modified version of original image by Д.Ильин: vectorization - Star Trek Warp Field.png by Trekky0623 at English Wikipedia, CC0, https://commons.wikimedia.org/w/index.php?curid=102959289](../LocalImages/WarpScorePro_Logo_Text.jpg)
+
+## What's in the repository?
+
+Think of the *WarpScore-Pro* repository as containing **the instructions, the report code, and its inputs (including the _R_ "environment" such as package versions, etc)**. The files in the repository each support a different part of the goal of running *WarpScore-Pro* on your own machine.
+
+- **`.Rproj`** — Gives users a convenient way to open the project in RStudio. Opening it sets the project folder as the working context, which helps relative paths to scripts, data and CSS resolve consistently. It doesn’t install packages or lock their versions.
+
+- **`.Rprofile`** — Runs when R starts in the project. The renv-generated version loads the project’s renv setup automatically. Keep it with the activation file it refers to: startup errors will occur if `.Rprofile` tries to load a missing `renv/activate.R`.
+
+- **`renv.lock`** — The package recipe. It records package names, versions and their sources, as well as information about the R version and repositories. `renv::restore()` reads it to recreate the R package library; after you’ve tested changes successfully, `renv::snapshot()` updates it.
+
+- **`renv/activate.R`** — The startup script that connects the project to renv and its project-specific package library. It’s not the package library itself; it helps each user’s R session use the library restored on that user’s machine.
+
+- **Other tracked renv files**, such as `renv/settings.json` and `renv/.gitignore` — These preserve project settings and help keep generated, machine-specific files out of the repository. Developers, if you would like to make your own changes to the repository, commit the renv setup files, but **don’t commit** the local package library or cache—typically `renv/library/` and `renv/staging/`. Each user gets those by restoring the lockfile.
+
+- **The Rmd, scripts, functions, data and CSS** — These are the actual reporting workflow and its required resources. When sharing the repository, include every script the Rmd sources, and any templates, example inputs or stylesheets it needs. Use project-relative paths where possible. If users supply their own data, include a small example and explain its expected format rather than including private input data.
+
+## How do I get *WarpScore-Pro* running on my own machine?
+
+**`Setup/setup.R`** is the convenience button: it installs the `renv` package if necessary, then asks renv to restore the packages listed in `renv.lock`. It doesn’t replace the report files, input data, or operating-system requirements.
+
+The intended user flow is: **install R and RStudio → open the `.Rproj` → run `setup.R` → populate the `PatientData` and `NormGrids` folders → knit the Rmd**. The lockfile helps reproduce the _R_-package versions, but it doesn’t install _R_, Pandoc, or OS-level libraries, and packages with system requirements can need extra setup. So test the repository from a fresh copy—and ideally on a machine or operating system similar to your users’—before sharing it. 
+
+For further guidance, consult the [renv](https://cloud.r-project.org/web/packages/renv/refman/renv.html) package site or [_Introduction to renv_](https://rstudio.github.io/renv/articles/renv.html).
